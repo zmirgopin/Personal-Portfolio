@@ -1,4 +1,4 @@
-
+/*Styling for the whole site.*/
 #banner {
     margin: -1% 0 0;
     padding-top: 10px;
@@ -34,20 +34,15 @@ list-style-type: none;
 }
 
 #nav-list li a:hover {
-    color: white;
-    background-color: #6e4275;
-    cursor: pointer;
+    text-decoration: underline;
 }
 
-#footer {
-font-size: x-small;   
- text-align: center;
-    height: 50px;
-    padding: 15px 0 15px 0;
-    font-style: italic;
+#footer { 
+    text-align: center;
     background-color: #6e4275;
     color: #fff;
-    position: relative;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
 }
@@ -62,15 +57,113 @@ font-size: x-small;
 }
 
 #footer a:hover {
-  color: #6e4275;
-    background-color: white;
+    text-decoration: underline;
 }
 
 .assign-container {
     padding: 10px;
+    margin-bottom: 100px;
 }
 
 .assign-content {
     width: 600px;
     margin: 3% auto 0;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+}
+h2{
+    font-family: 'Dosis Regular', serif;
+}
+p{
+    font-family: 'EB Garamond Regular', serif;
+}
+#caption{
+   text-align: justify;
+   padding-left: 20px;
+   color: gray;
+}
+/*Styling for the landing page*/
+.List{
+    float: right;
+}
+.ListItems{
+    list-style-type: none;
+}
+
+/*Styling for the about page */
+.aboutLayout{
+    display: flex;
+
+}
+.aboutLayout> .aboutText{
+    text-align: justify;
+    line-height:  1.8em;
+    float: left;
+    max-width: 500px;
+    margin-top: 10%;
+    margin-left: 15%;
+    padding: 20px;
+    background-color: #fdf4fc;
+    max-height: 275px;
+}
+
+.aboutLayout> .aboutImages{
+   flex: 1;
+}
+#img1{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+#img2{
+    padding: 30px;
+}
+/*Styling for resume page*/
+.resume{
+    text-align: center;
+}
+
+.resumeList{
+    list-style-type: none;
+    text-align: justify;
+    padding-left: 40%;
+    background-color: #fdf4fc;
+}
+#pdfResume{
+    float: right;
+    text-decoration: none;
+    color: gray;
+}
+#pdfResume:hover{
+    text-decoration: underline;
+    color: black;
+}
+/*Styling for project page of site*/
+.leftProjects{
+    float: left; 
+    width: 30%;
+    border-color: #6e4275;
+    border-width: 5px;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.midProjects{
+    float: left;
+    width: 30%;
+    border-color: #6e4275;
+    border-width: 5px;
+    border-style: solid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.rightProjects{
+    float: right; 
+    width: 30%;
+    border-color: #6e4275;
+    border-width: 5px;
+    border-style: solid;
+    padding-left: 10px;
 }
