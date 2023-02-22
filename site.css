@@ -1,3 +1,10 @@
+/*
+* code attribution
+* Title: site.css
+* Author: Zahava Gopin
+* Date: 22 February 2023
+* Description: Styling for the personal portfolio site.  
+*/
 /*Styling for the whole site.*/
 #banner {
     margin: -1% 0 0;
@@ -7,7 +14,7 @@
     background-color: #fdf4fc;
     color: black;
 }
-
+/*Styling for the header*/
 #nav-container {
     margin: -16px 0 0 0;
     padding: 0;
@@ -36,7 +43,7 @@ list-style-type: none;
 #nav-list li a:hover {
     text-decoration: underline;
 }
-
+/*Styling for the footer*/
 #footer { 
     text-align: center;
     background-color: #6e4275;
@@ -59,7 +66,7 @@ list-style-type: none;
 #footer a:hover {
     text-decoration: underline;
 }
-
+/*Styling for the main divs*/
 .assign-container {
     padding: 10px;
     margin-bottom: 100px;
@@ -69,7 +76,7 @@ list-style-type: none;
     width: 600px;
     margin: 3% auto 0;
 }
-
+/*Font styling*/
 h1{
     font-family: 'Playfair Display', serif;
 }
@@ -147,23 +154,22 @@ p{
     border-color: #6e4275;
     border-width: 5px;
     border-style: solid;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 5px;
 }
 .midProjects{
-    float: left;
+    padding-left: 30px;
     width: 30%;
-    border-color: #6e4275;
-    border-width: 5px;
-    border-style: solid;
-    padding-left: 5px;
-    padding-right: 5px;
+    float: left;
 }
+
 .rightProjects{
     float: right; 
     width: 30%;
     border-color: #6e4275;
     border-width: 5px;
     border-style: solid;
-    padding-left: 10px;
+    padding-top: 5px;
+}
+.card-content{
+    padding-left: 25px;
 }
