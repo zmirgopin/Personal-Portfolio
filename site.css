@@ -72,10 +72,7 @@ list-style-type: none;
     margin-bottom: 100px;
 }
 
-.assign-content {
-    width: 600px;
-    margin: 3% auto 0;
-}
+
 /*Font styling*/
 h1{
     font-family: 'Playfair Display', serif;
@@ -87,24 +84,46 @@ p{
     font-family: 'EB Garamond Regular', serif;
 }
 #caption{
-   text-align: justify;
-   padding-left: 20px;
+   text-align: right;
+   padding-right: 180px;
    color: gray;
 }
 /*Styling for the landing page*/
+#background{
+    background-image: url("background.jpg");
+    padding: 0px;
+    height: 550px;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hi{
+    width: 500px;
+    padding-left: 200px;
+}
+.hello{
+    font-size: 100px;
+}
+.name{
+    font-size: 45px;;
+}
+.small{
+    font-size: xx-small;
+}
 .List{
+    padding-right: 400px;
     float: right;
+    padding-top: 125px;
 }
 .ListItems{
     list-style-type: none;
 }
 
 /*Styling for the about page */
-.aboutLayout{
-    display: flex;
 
-}
-.aboutLayout> .aboutText{
+.aboutText{
     text-align: justify;
     line-height:  1.8em;
     float: left;
@@ -115,17 +134,8 @@ p{
     background-color: #fdf4fc;
     max-height: 275px;
 }
-
-.aboutLayout> .aboutImages{
-   flex: 1;
-}
-#img1{
-    padding-top: 60px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-}
-#img2{
-    padding: 30px;
+.img{
+    padding-top: 100px;
 }
 /*Styling for resume page*/
 .resume{
@@ -148,28 +158,24 @@ p{
     color: black;
 }
 /*Styling for project page of site*/
-.leftProjects{
-    float: left; 
-    width: 30%;
-    border-color: #6e4275;
-    border-width: 5px;
+.border{
+    border: #6e4275;
     border-style: solid;
-    padding-top: 5px;
+    border-width: 1px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #fdf4fc;
 }
-.midProjects{
-    padding-left: 30px;
-    width: 30%;
+.column {
     float: left;
-}
-
-.rightProjects{
-    float: right; 
     width: 30%;
-    border-color: #6e4275;
-    border-width: 5px;
-    border-style: solid;
-    padding-top: 5px;
-}
-.card-content{
-    padding-left: 25px;
-}
+    padding-left: 20px;
+    margin-bottom: 100px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
